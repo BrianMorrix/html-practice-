@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Texto original</h1>
+
+    <button id="console">Console</button>
+    <button id="prompt">Prompt</button>
+    <button id="alerta">Alerta</button>
+    <button id="suma">Suma</button>
+
+    <script>
+        // Cambiar el contenido de la etiqueta h1
+        document.querySelector("#titulo").textContent = "Hora del Desafío";
+
+        // Función para el botón "Console"
+        document.querySelector("#console").addEventListener("click", function() {
+            console.log("El botón fue clicado");
+        });
+
+        // Función para el botón "Prompt"
+        document.querySelector("#prompt").addEventListener("click", function() {
+            let ciudad = prompt("Ingresa el nombre de una ciudad de Brasil:");
+            if (ciudad) {
+                alert(`Estuve en ${ciudad} y me acordé de ti`);
+            }
+        });
+
+        // Función para el botón "Alerta"
+        document.querySelector("#alerta").addEventListener("click", function() {
+            alert("Yo amo JS");
+        });
+
+        // Función para el botón "Suma"
+        document.querySelector("#suma").addEventListener("click", function() {
+            let numero1 = parseFloat(prompt("Ingresa el primer número:"));
+            let numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+            if (!isNaN(numero1) && !isNaN(numero2)) {
+                let resultado = numero1 + numero2;
+                alert(`El resultado de la suma es: ${resultado}`);
+            } else {
+                alert("Por favor, ingresa números válidos.");
+            }
+        });
+    </script>
+</body>
+</html>
