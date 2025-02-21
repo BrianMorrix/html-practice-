@@ -1,0 +1,43 @@
+// Función que muestra "¡Hola, mundo!" en la consola.
+function saludarMundo() {
+  console.log("¡Hola, mundo!");
+}
+// Esto mostrará "¡Hola, mundo!" en la consola.
+
+// Función que recibe un nombre como parámetro y muestra "¡Hola, [nombre]!" en la consola.
+function saludarNombre(nombre) {
+  console.log("¡Hola, " + nombre + "!");}
+}
+saludarNombre("Brian"); // Esto mostrará "¡Hola, Brian!" en la consola.
+
+// Función que recibe un número como parámetro y devuelve el doble de ese número.
+function calcularDoble(numero) {
+  return numero * 2;
+}
+let doble = calcularDoble(5); // Esto asignará el valor 10 a la variable 'doble'.
+console.log(doble); // Esto mostrará 10 en la consola.
+
+// Función que recibe tres números como parámetros y devuelve su promedio.
+function calcularPromedio(num1, num2, num3) {
+  return (num1 + num2 + num3) / 3;
+}
+let promedio = calcularPromedio(10, 20, 30); // Esto asignará el valor 20 a la variable 'promedio'.
+console.log(promedio); // Esto mostrará 20 en la consola.
+
+// Función que recibe dos números como parámetros y devuelve el mayor de ellos.
+function encontrarMayor(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+let mayor = encontrarMayor(15, 8); // Esto asignará el valor 15 a la variable 'mayor'.
+console.log(mayor); // Esto mostrará 15 en la consola.
+
+// Función que recibe un número como parámetro y devuelve el resultado de multiplicar ese número por sí mismo.
+function calcularCuadrado(numero) {
+  return numero * numero;
+}
+let cuadrado = calcularCuadrado(7); // Esto asignará el valor 49 a la variable 'cuadrado'.
+console.log(cuadrado); // Esto mostrará 49 en la consola.
